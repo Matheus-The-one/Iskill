@@ -118,6 +118,15 @@ body{
   left: 0;
 }
 
+/* Add these styles to your global CSS file or in a CSS module */
+.fixed {
+  position: fixed;
+}
+
+.left-0 {
+  left: 0;
+}
+
 .top-0 {
   top: 0;
 }
@@ -140,6 +149,10 @@ body{
 
 .transform {
   transform: translateX(-100%);
+}
+
+.translate-x-0 {
+  transform: translateX(0);
 }
 
 .md\:translate-x-0 {

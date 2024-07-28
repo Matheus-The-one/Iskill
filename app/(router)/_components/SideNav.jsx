@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect } from 'react'
 
-function SideNav({ setIsSidebarOpen }) {
+function SideNav({ isOpen, setIsOpen }) {
   const { user } = useUser();
 
   const menu = [
@@ -56,8 +56,8 @@ function SideNav({ setIsSidebarOpen }) {
   return (
     <>
       {/* Sidebar */}
-      <div className='fixed left-0 top-0 p-5 bg-white shadow-sm border h-screen w-64 z-50 transition-transform transform md:translate-x-0 ease-in-out duration-300'>
-        <Image src='/loggo.png' alt='logo' width={70} height={70} className="hidden md:block" />
+      <div className={`fixed left-0 top-0 p-5 bg-white shadow-sm border h-screen w-64 z-50 transition-transform transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 ease-in-out duration-300`}>
+        <Image src='/loggo.png' alt='logo' width={50} height={50} className="hidden md:block" />
         <hr className='mt-7' />
         <div className='mt-5'>
           {menu.map((item) => item.auth && (
@@ -72,7 +72,9 @@ function SideNav({ setIsSidebarOpen }) {
       </div>
 
       {/* Overlay for Mobile View */}
-      <div className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" onClick={() => setIsSidebarOpen(false)}></div>
+      {isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" onClick={() => setIsOpen(false)}></div>
+      )}
     </>
   )
 }

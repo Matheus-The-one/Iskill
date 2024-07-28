@@ -36,11 +36,9 @@ function Header() {
       </div>
 
       {/* Sidebar for Mobile View */}
-      {isSidebarOpen && <SideNav setIsSidebarOpen={setIsSidebarOpen} />}
+      <SideNav isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
     </>
   )
 }
 
 export default Header
-
-
