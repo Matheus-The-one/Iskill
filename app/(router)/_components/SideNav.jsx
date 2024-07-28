@@ -58,7 +58,7 @@ function SideNav() {
     <div>
       {/* Mobile Navbar */}
       <div className="md:hidden p-5 bg-white shadow-sm border flex justify-between items-center">
-        <Image src='/logo.png' alt='logo' width={170} height={80} />
+        <Image src='/loggo.png' alt='logo' width={170} height={80} />
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X className="cursor-pointer" /> : <Menu className="cursor-pointer" />}
         </button>
@@ -66,7 +66,7 @@ function SideNav() {
 
       {/* Sidebar */}
       <div className={`fixed md:relative ${isOpen ? 'left-0' : '-left-full'} md:left-0 top-0 p-5 bg-white shadow-sm border h-screen transition-all ease-in-out duration-300 z-50`}>
-        <Image src='/logo.png' alt='logo' width={170} height={80} className="hidden md:block" />
+        <Image src='/loggo.png' alt='logo' width={170} height={80} className="hidden md:block" />
 
         <hr className='mt-7' />
 
@@ -92,3 +92,4 @@ function SideNav() {
 }
 
 export default SideNav
+

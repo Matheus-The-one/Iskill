@@ -4,7 +4,7 @@ import { UserButton, useUser } from '@clerk/nextjs'
 import { BellDot, Search, Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import SideNav from './SideNav' // Import the SideNav component
+
 
 function Header() {
   const { user, isLoaded } = useUser();
