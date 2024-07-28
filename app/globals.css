@@ -77,3 +77,35 @@ body{
     @apply bg-background text-foreground;
   }
 }
+.group:hover .group-hover\:animate-bounce {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hover\:bg-primary:hover {
+  background-color: #3498db; /* Replace with your primary color */
+}
+
+.hover\:text-white:hover {
+  color: #fff;
+}
+
+.bg-primary {
+  background-color: #3498db; /* Replace with your primary color */
+}
+
+.text-white {
+  color: #fff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
