@@ -4,7 +4,7 @@ import { UserButton, useUser } from '@clerk/nextjs'
 import { BellDot, Search, Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import React, { useState } from 'react'
-
+import SideNav from './SideNav' // Adjust the import based on your project structure
 
 function Header() {
   const { user, isLoaded } = useUser();
@@ -35,10 +35,12 @@ function Header() {
         </div>
       </div>
 
-      {/* Include the SideNav component
-      <SideNav isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} /> */}
+      {/* Sidebar for Mobile View */}
+      {isSidebarOpen && <SideNav setIsSidebarOpen={setIsSidebarOpen} />}
     </>
   )
 }
 
 export default Header
+
+

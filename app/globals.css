@@ -109,3 +109,41 @@ body{
 .cursor-pointer {
   cursor: pointer;
 }
+/* Add these styles to your global CSS file or in a CSS module */
+.fixed {
+  position: fixed;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.transform {
+  transform: translateX(-100%);
+}
+
+.md\:translate-x-0 {
+  @media (min-width: 768px) {
+    transform: translateX(0);
+  }
+}

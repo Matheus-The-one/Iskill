@@ -11,12 +11,14 @@ const quizzes = [
       {
         question: "What is the capital of France?",
         options: ["London", "Berlin", "Paris", "Madrid"],
-        correctAnswer: "Paris"
+        correctAnswer: "Paris",
+        img: "/1.gif"
       },
       {
         question: "Which planet is known as the Red Planet?",
         options: ["Mars", "Jupiter", "Venus", "Saturn"],
-        correctAnswer: "Mars"
+        correctAnswer: "Mars",
+        img: "/5.gif"
       },
     ]
   },
@@ -27,12 +29,14 @@ const quizzes = [
       {
         question: "What is 2 + 2?",
         options: ["3", "4", "5", "6"],
-        correctAnswer: "4"
+        correctAnswer: "4",
+        img: "/2.gif"
       },
       {
         question: "What is 10 * 5?",
         options: ["40", "50", "60", "70"],
-        correctAnswer: "50"
+        correctAnswer: "50",
+        img: "/4.gif"
       },
     ]
   },
